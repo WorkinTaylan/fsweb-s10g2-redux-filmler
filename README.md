@@ -32,12 +32,12 @@ Bu projede, küçük bir film veritabanı içeren bir web uygulamasında çalı�
 
 > _Reducers klasörü içinde movieReducers dosyası var. Burada state halihazırda tanımlı ve bazı başlangıç verileri girilmiş. Burdaki initial state'i reducerımıza bağlayalım._
 
-- [ ] ** movieReducer.js içinde, statein başlangıç değerini initialState olarak atadığımızdan emin olun.** Tüm filmleri burada import edip başlangıç statei olarak store'a koyduğumuza dikkat edin.
+- [*] ** movieReducer.js içinde, statein başlangıç değerini initialState olarak atadığımızdan emin olun.** Tüm filmleri burada import edip başlangıç statei olarak store'a koyduğumuza dikkat edin.
 
-- [ ] **MovieList bileşeni, tüm filmlerimizi ekrana yazdırır.**
+- [*] **MovieList bileşeni, tüm filmlerimizi ekrana yazdırır.**
       MovieList componentı içerisinde tüm filmleri göstermek için store'a erişip `movies` değerini kullanmalıyız. `react-redux` içerisinden `useSelector` hookunu kullanarak `movies` değerine erişin.
 
-- [ ] **Son olarak MovieHeader, başlık metnini görüntülemek için appTitle'ı kullanır.** Store içerisindeki `appTitle` değerine yine `useSelector` ile erişin ve sayfada düzgün görüntülendiğinden emin olun.
+- [*] **Son olarak MovieHeader, başlık metnini görüntülemek için appTitle'ı kullanır.** Store içerisindeki `appTitle` değerine yine `useSelector` ile erişin ve sayfada düzgün görüntülendiğinden emin olun.
 
 #### Sil ve Film Ekle eylemlerini bağlama
 
