@@ -1,0 +1,1 @@
+yeni eklenen filmin detayına basınca sayfa hata veriyor. 

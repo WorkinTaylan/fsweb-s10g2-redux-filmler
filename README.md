@@ -41,36 +41,36 @@ Bu projede, küçük bir film veritabanı içeren bir web uygulamasında çalı�
 
 #### Sil ve Film Ekle eylemlerini bağlama
 
-- [ ] `movieReducers` dosyası içerisinde `deleteMovie` için yazılmış bir bölüm olduğunu ve movieActions dosyası içerisinde ilgili action oluşturucunun zaten mevcut olduğunu unutmayın.
+- [*] `movieReducers` dosyası içerisinde `deleteMovie` için yazılmış bir bölüm olduğunu ve movieActions dosyası içerisinde ilgili action oluşturucunun zaten mevcut olduğunu unutmayın.
 
-- [ ] **Movie bileşeninde bir silme işlemini tetiklemesi gereken HTML öğesini bulun.** Geçerli filmin id değeri ile deleteMovie'yi çağırmak için gerekli event handlerı oluşturun ve bağlayın. Bu handler içerisinde silme actionunu dispatch ettikten sonra kullanıcıyı push('/movies') komutunu kullanarak tüm filmlere yönlendirin. **(Bu kısımda, useParams ile alıp deleteMovie actionu ile dispatch ettiğiniz id değerinin string olduğunu ve movieReducer içerisinde size sağlanan silme eyleminde buna dikkat etmeniz gerektiğini unutmayın!)**
+- [*] **Movie bileşeninde bir silme işlemini tetiklemesi gereken HTML öğesini bulun.** Geçerli filmin id değeri ile deleteMovie'yi çağırmak için gerekli event handlerı oluşturun ve bağlayın. Bu handler içerisinde silme actionunu dispatch ettikten sonra kullanıcıyı push('/movies') komutunu kullanarak tüm filmlere yönlendirin. **(Bu kısımda, useParams ile alıp deleteMovie actionu ile dispatch ettiğiniz id değerinin string olduğunu ve movieReducer içerisinde size sağlanan silme eyleminde buna dikkat etmeniz gerektiğini unutmayın!)**
 
-- [ ] movieReducer.js'ye bir ADD_MOVIE casei ekleyin.
-- [ ] Bu yeni casein, payload aracılığıyla iletilen yeni film değerlerine sahip bir state döndürmesini sağlayın
-- [ ] movieActions.js'de addMovie için bir action oluşturucu oluşturun.
-- [ ] Bir filmin eklenmesini tetikleyen bileşeni bulun ve addMovie actionunu bağlayın.
-- [ ] addMovie'yi çağırmak için gerekli event handlerı oluşturun ve bağlayın.
-- [ ] Yeni bir film eklerken id değeri olarak Date.now() kullanın.
-- [ ] Yönlendirmeyi tetiklemek için eyleminizi çağırdıktan sonra push('/movies/') öğesini ekleyin.
+- [*] movieReducer.js'ye bir ADD_MOVIE casei ekleyin.
+- [*] Bu yeni casein, payload aracılığıyla iletilen yeni film değerlerine sahip bir state döndürmesini sağlayın
+- [*] movieActions.js'de addMovie için bir action oluşturucu oluşturun.
+- [*] Bir filmin eklenmesini tetikleyen bileşeni bulun ve addMovie actionunu bağlayın.
+- [*] addMovie'yi çağırmak için gerekli event handlerı oluşturun ve bağlayın.
+- [*] Yeni bir film eklerken id değeri olarak Date.now() kullanın.
+- [*] Yönlendirmeyi tetiklemek için eyleminizi çağırdıktan sonra push('/movies/') öğesini ekleyin.
 
 #### Favoriler reducerı oluşturun
 
 > _Tamam! Artık film reducerı tamamladığınızdan, en sevdiğiniz film işlevselliğini işlemek için sıfırdan bir reducer oluşturma şansınız var. Reducerları birleştirme konusunda çalışacağız._
 
-- [ ] Favoriler için iş mantığını işlemek için bir reducer dosyası oluşturun. Bu dosyada kullanacağınız InitialState objenize aşağıdaki değerlerini ekleyin:
+- [*] Favoriler için iş mantığını işlemek için bir reducer dosyası oluşturun. Bu dosyada kullanacağınız InitialState objenize aşağıdaki değerlerini ekleyin:
 
   - favorites: film nesnesini içeren bir dizi (şimdilik boş)
   - displayFavorites: Uygulamada favorilerin görüntülendiği yan alanın gösterim değerini (göster/gizle) tutan bir boolean
 
-- [ ] **Yeni reducerınızı ./reducers/index.js dosyasına import edin.** Başlangıç ta, switch deyimine yalnızca bir default case ekleyin.
+- [*] **Yeni reducerınızı ./reducers/index.js dosyasına import edin.** Başlangıç ta, switch deyimine yalnızca bir default case ekleyin.
 
-- [ ] **reducers/index.js'de hem filmleri hem de favori filmleri redux'a bağlamak için CombineReducers metodunu kullanın.**
+- [*] **reducers/index.js'de hem filmleri hem de favori filmleri redux'a bağlamak için CombineReducers metodunu kullanın.**
 
-- [ ] **Film işlevlerinizin artık çalışmadığına dikkat edin. Neden?** Film reducera bağlı bileşenin tekrar çalışmasını sağlamak için gerekli değişiklikleri yapın.
+- [*] **Film işlevlerinizin artık çalışmadığına dikkat edin. Neden?**Film reducera bağlı bileşenin tekrar çalışmasını sağlamak için gerekli değişiklikleri yapın. 
 
-- [ ] Store içerisinden `favorites` değerini FavoriteMovieList bileşenine bağlayın ve test edin. (ipucu: yine useSelector kullanın)
+- [*] Store içerisinden `favorites` değerini FavoriteMovieList bileşenine bağlayın ve test edin. (ipucu: yine useSelector kullanın)
 
-- [ ] DisplayFavorites değerini store içerisinden çekerek Movie ve MovieHeader bileşeninde ilgili yerlerde kullanın.
+- [*] DisplayFavorites değerini store içerisinden çekerek Movie ve MovieHeader bileşeninde ilgili yerlerde kullanın.
 
 #### Favoriler eylemleri ekleyin
 
